@@ -10,67 +10,74 @@
     <!-- Bootstrap -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Font+Name">
 
 </head>
 
 <body>
     <header>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-            <a class="navbar-brand" href="#">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(32,178,170);">
+            <div class='container'>
+            <a class="navbar-brand main-color" href="#">
                 <img src="/docs/4.2/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-                Navbar</a>
+                Otterly</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="animals.html">ANIMALS</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="issues.html">ISSUES</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">ABOUT</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="donate.html">DONATE</a>
-              </li>
-              <li class="nav-item">
-                <button data-toggle="modal" data-target="#signUpModal">Sign Up</button>
-              </li>
-              <li class="nav-item">
-                <button data-toggle="modal" data-target="#signInModal">Sign In</button>
-              </li>
-            </ul>
-            </div>
-        </nav>
+            <div id="navbarNav">
+                <ul class="navbar-nav navbar-right">
+                  <li class="nav">
+                    <a class="nav-link main-color" href="#">HOME<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav">
+                    <a class="nav-link main-color" href="animals.html">ANIMALS</a>
+                  </li>
+                  <li class="nav">
+                    <a class="nav-link main-color" href="issues.html">ISSUES</a>
+                  </li>
+                  <li class="nav">
+                    <a class="nav-link main-color" href="about.html">ABOUT</a>
+                  </li>
+                  <li class="nav">
+                    <a class="nav-link main-color" href="donate.html">DONATE</a>
+                  </li>
+                  <li class="nav">
+                    <button class="main-Btn btn" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+                  </li>
+                  <li class="nav-item">
+                    <button class="main-Btn btn" data-toggle="modal" data-target="#signInModal">Sign In</button>
+                  </li>
+                </ul>
+                </div>
+                </div>
+            </nav>
+        </header>
 
-    </header>
-
-    <!-- Carousel of Images -->
-    <div>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-          </div>
+        <!-- Carousel of Images -->
+        <div class="container justify-content-center">
+            <div id="carouselExampleSlidesOnly" class="carousel slide justify-content-center" data-ride="carousel">
+              <div class="carousel-inner equal">
+                <div class="carousel-item active">
+                    <img src="..." class="caro-size" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="caro-size" alt="...">
+                </div>
+                <div class="carousel-item">
+                  <img src="..." class="caro-size" alt="...">
+                </div>
+              </div>
         </div>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada enim elit, id ornare augue cursus id. Vestibulum sed lectus vel nibh pharetra molestie. Morbi erat ipsum, porta euismod ipsum quis, cursus sollicitudin augue. Donec posuere fringilla ultrices. Donec ultrices, enim et mattis egestas, nunc libero iaculis ante, rhoncus ornare felis sapien quis mi. Curabitur mollis vel arcu sit amet consectetur. Morbi pretium metus nec nulla hendrerit, in consectetur urna ultrices. Quisque condimentum laoreet urna malesuada pharetra. In sapien magna, fermentum sed eros a, accumsan porttitor ante. Praesent nec felis nunc. Suspendisse tempus bibendum dolor, eget ultricies ex efficitur at. Donec malesuada hendrerit lacinia. Mauris in mi scelerisque, eleifend dolor vitae, varius justo. Curabitur non vulputate massa, id luctus mauris. Mauris ut faucibus sapien, placerat dignissim risus.
-        </p>
-    </div>
+        <div class="container justify-content-center">
+            <p class="text-center">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada enim elit, id ornare augue cursus id. Vestibulum sed lectus vel nibh pharetra molestie. Morbi erat ipsum, porta euismod ipsum quis, cursus sollicitudin augue. Donec posuere fringilla ultrices. Donec ultrices, enim et mattis egestas, nunc libero iaculis ante, rhoncus ornare felis sapien quis mi. Curabitur mollis vel arcu sit amet consectetur. Morbi pretium metus nec nulla hendrerit, in consectetur urna ultrices. Quisque condimentum laoreet urna malesuada pharetra. In sapien magna, fermentum sed eros a, accumsan porttitor ante. Praesent nec felis nunc. Suspendisse tempus bibendum dolor, eget ultricies ex efficitur at. Donec malesuada hendrerit lacinia. Mauris in mi scelerisque, eleifend dolor vitae, varius justo. Curabitur non vulputate massa, id luctus mauris. Mauris ut faucibus sapien, placerat dignissim risus.
+            </p>
+        </div>
+        </div>
 
     <!--Account Sign Up-->
     <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
