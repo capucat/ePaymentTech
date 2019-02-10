@@ -12,9 +12,10 @@ body {
 }
 .main-Btn{
     background-color: rgb(255,255,240);
+    margin-right: 6px;
 }
 .caro-size {
-    /* height:600px; */
+    height:600px;
     width:600px;
     /* text-align: center; */
 }
