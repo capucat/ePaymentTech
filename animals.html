@@ -71,12 +71,8 @@
                 <li class="nav">
                   <a class="nav-link main-color" href="donate.html">DONATE</a>
                 </li>
-                <li class="nav">
-                  <button class="main-Btn btn" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
-                </li>
-                <li class="nav-item">
-                  <button class="main-Btn btn" data-toggle="modal" data-target="#signInModal">Sign In</button>
-                </li>
+                <div id="rightBtns">
+                </div>
               </ul>
           </div>
         </nav>
@@ -150,7 +146,7 @@
               </form>
           </div>
           <div class="modal-footer">
-            <a id="signIn" type="button" class="btn issue" href="profile.html">Sign In</a>
+            <button id="signIn" type="button" class="btn issue"><a href="profile.html" style='color:white !important;'>Sign In</a></button>
           </div>
         </div>
       </div>
@@ -222,8 +218,8 @@
 
           </div>
           <div class="modal-footer">
-            <!-- <button type="button" class="btn issue" onclick="createCustomer();">Create Account</button> -->
-            <button id="signIn" type="button" class="btn issue"><a href="profile.html" style={color:white}>Sign In</a></button>
+            <button type="button" class="btn issue" onclick="createCustomer();">Create Account</button>
+            <!-- <button id="signIn" type="button" class="btn issue"><a href="profile.html" style={color:white}>Sign In</a></button> -->
 
           </div>
         </div>
