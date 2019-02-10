@@ -10,6 +10,21 @@
     <!-- Bootstrap -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  /*background-color: #2196F3;*/
+  padding: 10px;
+}
+.grid-item {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+</style>
 
 </head>
 
@@ -51,9 +66,21 @@
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada enim elit, id ornare augue cursus id. Vestibulum sed lectus vel nibh pharetra molestie. Morbi erat ipsum, porta euismod ipsum quis, cursus sollicitudin augue. Donec posuere fringilla ultrices. Donec ultrices, enim et mattis egestas, nunc libero iaculis ante, rhoncus ornare felis sapien quis mi. Curabitur mollis vel arcu sit amet consectetur. Morbi pretium metus nec nulla hendrerit, in consectetur urna ultrices. Quisque condimentum laoreet urna malesuada pharetra. In sapien magna, fermentum sed eros a, accumsan porttitor ante. Praesent nec felis nunc. Suspendisse tempus bibendum dolor, eget ultricies ex efficitur at. Donec malesuada hendrerit lacinia. Mauris in mi scelerisque, eleifend dolor vitae, varius justo. Curabitur non vulputate massa, id luctus mauris. Mauris ut faucibus sapien, placerat dignissim risus.
             </p>
-            <div>
+
+        </div>
+        <div class = "grid-container">
                 <!-- 2col 2 row -->
-            </div>
+                <div class="grid-item">Amur Leopard
+                    <div><img src="amur_leopard.jpg" alt="Amur Leopard" width="250" height="200"></div></div>
+
+              <div class="grid-item">Javan Rhino
+                <div><img src="rhino.jpg" alt="Javan Rhino" width="250" height="200"></div></div>
+
+              <div class="grid-item">Asian Elephant
+              <div><img src="amur_leopard.jpg" alt="Asian Elephant" width="250" height="200"></div></div>
+
+              <div class="grid-item">Lemur
+              <div><img src="amur_leopard.jpg" alt="Lemur" width="250" height="200"></div></div>
         </div>
     </body>
     <footer>
