@@ -8,38 +8,147 @@
     <title>Green Corn</title>
 
     <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous">
     <link rel="stylesheet" href="quiz.css">
-
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-    <h1>Animal Matching Quiz</h1>
+    <h1 style="background-color: rgb(32,178,170);">Animal Matching Quiz</h1>
 <div class="quiz-container">
   <div id="quiz"></div>
 </div>
-<button id="previous">Previous Question</button>
-<button id="next">Next Question</button>
-<button id="submit">Submit Quiz</button>
+<button class='btn issue' id="previous">Previous Question</button>
+<button class='btn issue'id="next">Next Question</button>
+<button data-toggle='modal' data-target='#resultModal' class='btn issue' id="submit">Submit Quiz</button>
 
 
 
-<div id="results"></div>
+<div class="modal" id="resultModal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">Your Result</div>
+      <div class="modal-body">
+          <div id="result">
+          </div>
+          If you'd like to donate, please make an account or sign in to keep track of your contributions!
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="btn issue" onclick="openAcc();">Create Account</button>
+          <button type="button" class="btn issue" onclick="signIn(); ">Sign in</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Account Sign Up-->
+<div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        Sign Up
+      </div>
+      <div class="modal-body">
+          <form id="formD">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="inputName">First</label>
+                  <input type="firstName" class="form-control" id="firstName" placeholder="firstName">
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="inputName">Last</label>
+                  <input type="lastName" class="form-control" id="lastName" placeholder="lastName">
+                </div>
+              </div>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="inputAddress">Address</label>
+              <input type="text" class="form-control" id="line1" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+              <label for="inputAddress2">Address 2</label>
+              <input type="text" class="form-control" id="line2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+              <div class="form-group col-md-2">
+                <label for="inputCity">City</label>
+                <input type="text" class="form-control" id="city">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputState">State</label>
+                <input type="text" class="form-control" id="state">
+              </div>
+              <div class="form-group col-md-2">
+                <label for="inputZip">Zip</label>
+                <input type="text" class="form-control" id="zip">
+              </div>
+              <div class="form-group col-md-4">
+                <label for="inputPhone">Phone Number</label>
+                <input type="text" class="form-control" id="phone1">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Save card info
+                </label>
+              </div>
+            </div>
+          </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" onclick="createCustomer();">Create Account</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Account Sign In-->
+<div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        Sign In
+      </div>
+      <div class="modal-body">
+          <form>
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <label for="inputEmail4">Email</label>
+                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+              </div>
+              <div class="form-group col-md-6">
+                  <!-- externalCustomerIdentifier -->
+                <label for="inputPassword4">Password</label>
+                <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+              </div>
+            </div>
+          </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Sign In</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-<script src="index.js"></script>
-<script src="quiz.js"></script>
+<script src="index.js" type="text/javascript"></script>
+<script src="quiz.js" type="text/javascript"></script>
 
 </body>
 </html>
-
-
-
-
-
-
-
-

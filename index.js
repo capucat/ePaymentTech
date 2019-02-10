@@ -18,3 +18,9 @@ $(document).on("click", "#donate", function(){ //was .btn
       console.log(response);
     });
 });
+
+
+$('#quizBtn').click(function() {
+    window.location.href = 'quiz.html';
+    return false;
+});
