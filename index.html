@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
 
-    <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Font+Name">
+    <!-- <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Font+Name"> -->
 
     <style>
       .act_now {
@@ -57,42 +57,40 @@
     <header>
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(32,178,170);">
-            <div class='container'>
             <a class="navbar-brand main-color" href="#">
                 <img src="/docs/4.2/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
                 Otterly</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarNav">
-                <ul class="navbar-nav navbar-right">
-                  <li class="nav">
-                    <a class="nav-link main-color" href="#">HOME<span class="sr-only">(current)</span></a>
-                  </li>
-                  <li class="nav">
-                    <a class="nav-link main-color" href="animals.html">ANIMALS</a>
-                  </li>
-                  <li class="nav">
-                    <a class="nav-link main-color" href="issues.html">ISSUES</a>
-                  </li>
-                  <li class="nav">
-                    <a class="nav-link main-color" href="about.html">ABOUT</a>
-                  </li>
-                  <li class="nav">
-                    <a class="nav-link main-color" href="donate.html">DONATE</a>
-                  </li>
-                  <li class="nav">
-                    <button class="main-Btn btn" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
-                  </li>
-                  <li class="nav-item">
-                    <button class="main-Btn btn" data-toggle="modal" data-target="#signInModal">Sign In</button>
-                  </li>
-                </ul>
-                </div>
-                </div>
-            </nav>
-        </header>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+              <ul class="navbar-nav main-color">
+                <li class="nav">
+                  <a class="nav-link main-color" href="#">HOME</a>
+                </li>
+                <li class="nav">
+                  <a class="nav-link main-color" href="animals.html">ANIMALS</a>
+                </li>
+                <li class="nav">
+                  <a class="nav-link main-color" href="issues.html">ISSUES</a>
+                </li>
+                <li class="nav">
+                  <a class="nav-link main-color" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav">
+                  <a class="nav-link main-color" href="donate.html">DONATE</a>
+                </li>
+                <li class="nav">
+                  <button class="main-Btn btn" data-toggle="modal" data-target="#signUpModal">Sign Up</button>
+                </li>
+                <li class="nav-item">
+                  <button class="main-Btn btn" data-toggle="modal" data-target="#signInModal">Sign In</button>
+                </li>
+              </ul>
+          </div>
+        </nav>
       </div>
+
       <div>
           <img src="cool_leopard.jpg" alt="snow_leopard" style="width:100%;">
           <div class="top-left">SAVE TODAY.</div>
@@ -107,7 +105,7 @@
         <!-- Carousel of Images -->
 
         <div class="container justify-content-center">
-            <div id="carouselExampleSlidesOnly" class="carousel slide justify-content-center" data-ride="carousel">
+            <div id="carouselExampleSlidesOnly" class="carousel slide justify-content-center" data-interval="1500" data-ride="carousel">
               <div class="carousel-inner equal">
                 <div class="carousel-item active">
                     <img src="leopard.jpg" class="caro-size" alt="snow_leopard">
@@ -222,7 +220,7 @@
               </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Sign In</button>
+            <a type="button" class="btn issue" href="profile.html">Sign In</button>
           </div>
         </div>
       </div>
