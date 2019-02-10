@@ -1,4 +1,6 @@
 $(document).on("click", "#donate", function(){ //was .btn
+
+    // var dataInputs="accountID:"+;
     var settings = {
       "async": false,
       "crossDomain": true,
@@ -25,16 +27,22 @@ $('#quizBtn').click(function() {
     return false;
 });
 
-// rendering signIn & createAccount or Profile buttons based on whether customer is signed in
-var loggedIn=false;
+// Cookies are cleared when BROWSER closes
+// Way to track if person has logged in or not (clicked sign in)
 $('#signIn').click(function() {
     console.log("clicked");
-    loggedIn=true;
+    // loggedIn=true;
+    document.cookie = 'loggedIn=true';
 });
 var btnArrange = document.getElementById("rightBtns");
-if(loggedIn) {
-
+var cookie= document.cookie.split(";");
+if(cookie[0]=='loggedIn=true') {
+    btnArrange.innerHTML += "<a class='main-Btn btn' href='profile.html'>Profile</a>";
+    console.log(document.cookie);
+    cookie='';
+    console.log(cookie);
 } else {
+    console.log(document.cookie);
     btnArrange.innerHTML += "<button class='main-Btn btn' data-toggle='modal' data-target='#signInModal'>Sign In</button>";
     btnArrange.innerHTML += "<button class='main-Btn btn' data-toggle='modal' data-target='#signUpModal'>Sign Up</button>";
 }

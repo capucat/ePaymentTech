@@ -13,7 +13,9 @@
     <link rel="stylesheet" type="text/css" href="index.css">
 
     <link rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Font+Name">
+      href="https://fonts.googleapis.com/css?family=JuliusSansOne">
+      <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Michroma">
 
     <style>
       .act_now {
@@ -25,7 +27,7 @@
       }
       .text-center {
         .padding-top: 50px;
-        font-size:  20px;
+        /* font-size:  20px; */
         font-weight: 600;
         color: black;
       }
@@ -93,6 +95,8 @@
             </nav>
         </header>
       </div>
+    </header>
+
       <div>
           <img src="cool_leopard.jpg" alt="snow_leopard" style="width:100%;">
           <div class="top-left">SAVE TODAY.</div>
@@ -102,7 +106,7 @@
             <p class="text-center">
                 Species ranging from snow leopards, green turtles, lemurs and more, are facing endangerment and even extinction. We work towards helping every species that are constantly threatened by man-made issues such as global warming, poaching, illegal trading and more immoral acts. We need to take responsibility for our actions.
             </p>
-            <p class="act_now">We need to act now.</p>
+            <h4 class="act_now">We need to act now.</h4>
         </div>
         <!-- Carousel of Images -->
 
@@ -131,7 +135,7 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            Sign Up
+            <h2>Sign Up</h2>
           </div>
           <div class="modal-body">
               <form id="formD">
@@ -193,7 +197,7 @@
 
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" onclick="createCustomer();">Create Account</button>
+            <button type="button" class="btn issue" onclick="createCustomer();">Create Account</button>
           </div>
         </div>
       </div>
@@ -204,7 +208,7 @@
       <div class="modal-dialog modal-dialog-centered" role="document">
         <div class="modal-content">
           <div class="modal-header">
-            Sign In
+            <h2>Sign In</h2>
           </div>
           <div class="modal-body">
               <form>
@@ -214,7 +218,6 @@
                     <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
                   </div>
                   <div class="form-group col-md-6">
-                      <!-- externalCustomerIdentifier -->
                     <label for="inputPassword4">Password</label>
                     <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
                   </div>
@@ -222,7 +225,12 @@
               </form>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Sign In</button>
+              <button id="signIn" type="button" class="btn issue"><a href="profile.html" style={color:white}>Sign In</a></button>
+
+            <!-- <a id="signIn" type="button" class="btn issue" href="profile.html">Sign In</a> -->
+            <!-- <button type="button" class="btn issue" onclick="createCustomer();">Create Account</button> -->
+          </div>
+
           </div>
         </div>
       </div>
