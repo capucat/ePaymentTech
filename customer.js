@@ -11,21 +11,29 @@ function createCustomer() {
     var state=document.getElementById("state").value;
     var zip=document.getElementById("zip").value;
     var phone1=document.getElementById("phone1").value;
-    //
+
     console.log(firstName);
 
-    var formData = JSON.stringify($("#formD").serializeArray());
-    var formData = {
-        "address": {
-            "city":city,"line1":line1,"state":state,"zip":zip
-        },
-        "email":email,
-        "mode":"initiate",
-        "personName":{"firstName":firstName,"lastName":lastName},
-        "phone1":phone1,
-        "requestID":"initial01",
-        "externalCustomerID":password
-    };
+    // var formData = JSON.stringify($("#formD").serializeArray());
+    // var formData = {
+    //     "address": {
+    //         "city":city,"line1":line1,"state":state,"zip":zip
+    //     },
+    //     "email":email,
+    //     "mode":"initiate",
+    //     "personName":{"firstName":firstName,"lastName":lastName},
+    //     "phone1":phone1,
+    //     "requestID":"initial01",
+    //     "externalCustomerID":password
+    // };
+    var formData = new FormData();
+    formData.append("address","{city:"+city+",line1:"+line1+",state:"+state+",zip:"+zip+"}");
+    formData.append("email",email);
+    formData.append("mode","initiate");
+    formData.append("personName","{firstName:"+firstName+",lastName:"+lastName+"}");
+    formData.append("phone1",phone1);
+    formData.append("requestID","demoTime0");
+    formData.append("externalCustomerIdentifier",password);
     // var formData = {
     //     "address": {
     //         "city":"alpharetta","line1":"1000 streets street","state":"FL","zip":"30211"
@@ -62,7 +70,7 @@ function editCustomerFunds() {
 var settings = {
   "async": true,
   "crossDomain": true,
-  "url": "https://certwebservices.ft.cashedge.com/sdk/Payments/Customers?requestID=initial01&pageNumber=1&pageSize=10&startDate=02/09/2019&endDate=02/09/2019",
+  "url": "https://certwebservices.ft.cashedge.com/sdk/Payments/Customers?requestID=demoTime0&pageNumber=1&pageSize=10&startDate=02/09/2019&endDate=02/09/2019",
   "method": "GET",
   "headers": {
     "apiKey": "prod-b43dbcb90ef2c1c27419794db88841ece591c40cbcde9379d0c3bdea38af5b16f0a671e4a4aa2f2060e42e4de5bc3230e893e201fe5b2d310289a0818906c940",
