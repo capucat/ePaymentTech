@@ -24,3 +24,17 @@ $('#quizBtn').click(function() {
     window.location.href = 'quiz.html';
     return false;
 });
+
+// rendering signIn & createAccount or Profile buttons based on whether customer is signed in
+var loggedIn=false;
+$('#signIn').click(function() {
+    console.log("clicked");
+    loggedIn=true;
+});
+var btnArrange = document.getElementById("rightBtns");
+if(loggedIn) {
+
+} else {
+    btnArrange.innerHTML += "<button class='main-Btn btn' data-toggle='modal' data-target='#signInModal'>Sign In</button>";
+    btnArrange.innerHTML += "<button class='main-Btn btn' data-toggle='modal' data-target='#signUpModal'>Sign Up</button>";
+}
