@@ -24,7 +24,7 @@
     }
 .grid-container {
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: auto auto auto auto;
   /*background-color: #2196F3;*/
   padding: 10px;
 }
@@ -35,6 +35,11 @@
   font-size: 30px;
   /* text-align: center; */
 }
+.grid_description {
+    padding-top: 50px;
+    font-size: 15px;
+}
+
 </style>
 
 </head>
@@ -82,27 +87,41 @@
         <h2 class="text-center mt-4 mb-4">Description of Animals</h2>
         <div>
             <p class="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada enim elit, id ornare augue cursus id. Vestibulum sed lectus vel nibh pharetra molestie. Morbi erat ipsum, porta euismod ipsum quis, cursus sollicitudin augue. Donec posuere fringilla ultrices. Donec ultrices, enim et mattis egestas, nunc libero iaculis ante, rhoncus ornare felis sapien quis mi. Curabitur mollis vel arcu sit amet consectetur. Morbi pretium metus nec nulla hendrerit, in consectetur urna ultrices. Quisque condimentum laoreet urna malesuada pharetra. In sapien magna, fermentum sed eros a, accumsan porttitor ante. Praesent nec felis nunc. Suspendisse tempus bibendum dolor, eget ultricies ex efficitur at. Donec malesuada hendrerit lacinia. Mauris in mi scelerisque, eleifend dolor vitae, varius justo. Curabitur non vulputate massa, id luctus mauris. Mauris ut faucibus sapien, placerat dignissim risus.
+                These animals are all endangered at different levels of severity. Look below to learn more about these beautiful animals!
             </p>
 
         </div>
         <div class = "grid-container mb-4">
                 <!-- 2col 2 row -->
                 <div class="grid-item">Amur Leopard
-                    <div><img src="amur_leopard.jpg" alt="Amur Leopard" width="250" height="200"></div>
+                    <div class="animal_description"><img src="amur_leopard.jpg" alt="Amur Leopard" width="250" height="200"></div>
+                </div>
+                <div class="grid-description mt-7">
+                    Amur Leopards live in temperate climates, and live in solitary. When they hunt for food, they usually keep it to themselves. Amur Leopards are victim to the illegal wild life trade, and are killed for their fur.
                 </div>
 
               <div class="grid-item">Javan Rhino
                 <div><img src="rhino.jpg" alt="Javan Rhino" width="250" height="200"></div>
               </div>
+              <div class="grid-description">
+                    The Javan Rhino lives in rainy, warm grasslands. They live mostly in solitary, but deviate awawy from that lifestly due to courtship and offspring-rearing. Rhinos have had a history of being hunted. During colonial times, they were killed by trophy hunters. Poaching  is still prevalent as well.
+                </div>
 
               <div class="grid-item">Asian Elephant
-                  <div><img src="amur_leopard.jpg" alt="Asian Elephant" width="250" height="200"></div>
+                  <div><img src="elephant.jpg" alt="Asian Elephant" width="250" height="200"></div>
               </div>
+              <div class="grid-description">
+                    Asian Elephants are very social animals, that form moderately sized groups. They are also an important cultural icon in Asia, especially in Hindu mythology. Asian Elephants are endangered due to poaching and habitat loss.
+
+                </div>
 
               <div class="grid-item">Lemur
-                  <div><img src="amur_leopard.jpg" alt="Lemur" width="250" height="200"></div>
+                  <div><img src="lemur.jpg" alt="Lemur" width="250" height="200"></div>
               </div>
+               <div class="grid-description">
+                    Lemurs get their name from the latin word, Lemures, which means 'spirit of the night'. The largest every living type of lemur was the Archaeoindris.
+
+                </div>
         </div>
     </div>
 
