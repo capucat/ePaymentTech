@@ -14,15 +14,15 @@
 </head>
 
 <body>
-    <h1 style="background-color: rgb(32,178,170);">Animal Matching Quiz</h1>
-<div class="quiz-container">
-  <div id="quiz"></div>
-</div>
-<button class='btn issue' id="previous">Previous Question</button>
-<button class='btn issue'id="next">Next Question</button>
-<button data-toggle='modal' data-target='#resultModal' class='btn issue' id="submit">Submit Quiz</button>
-
-
+    <h1 style="background-color: rgb(32,178,170); font-size:28px">Animal Matching Quiz</h1>
+    <div class="quiz-container row">
+        <div id="quiz"></div>
+    </div>
+    <div class="row" >
+        <button class='btn issue' id="previous" >Previous Question</button>
+        <button class='btn issue' id="next" >Next Question</button>
+        <button data-toggle='modal' data-target='#resultModal' data-backdrop="static" class='btn issue' id="submit">Submit Quiz</button>
+    </div>
 
 <div class="modal" id="resultModal" tabindex="-1" role="dialog">
   <div class="modal-dialog" role="document">
@@ -34,8 +34,8 @@
           If you'd like to donate, please make an account or sign in to keep track of your contributions!
       </div>
       <div class="modal-footer">
-          <button type="button" class="btn issue" onclick="openAcc();">Create Account</button>
-          <button type="button" class="btn issue" onclick="signIn(); ">Sign in</button>
+          <button id="createAcct" type="button" class="btn issue" onclick="openAcc();">Create Account</button>
+          <button id="signIn" type="button" class="btn issue" onclick="signIn(); ">Sign in</button>
       </div>
     </div>
   </div>

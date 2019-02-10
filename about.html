@@ -11,8 +11,16 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=JuliusSansOne">
+      <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Michroma">
 
     <style>
+        label,input,select{
+            font-family: 'Michroma',sans-serif;
+            font-size: 12px !important;
+        }
       .about {
         padding: 20px;
       }
@@ -21,18 +29,18 @@
         font-size: 20px;
       }
       .grid-container {
-  display: grid;
-  grid-template-columns: auto auto;
-  /*background-color: #2196F3;*/
-  padding: 10px;
-}
-.grid-item {
-  /*background-color: rgba(255, 255, 255, 0.8);*/
-  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
-  padding: 10px;
-  font-size: 30px;
-  text-align: center;
-}
+      display: grid;
+      grid-template-columns: auto auto;
+      /*background-color: #2196F3;*/
+      padding: 10px;
+    }
+    .grid-item {
+      /*background-color: rgba(255, 255, 255, 0.8);*/
+      /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+      padding: 10px;
+      font-size: 30px;
+      text-align: center;
+    }
     </style>
 
 </head>
@@ -77,8 +85,8 @@
 
     <body>
         <div>
-            <h1 class="about">Your Contribution</h1>
-            <p class="about_text">We are raising awareness for animals that are in critical danger of being  endangered or extinct. We connect your donations to non-profit organizations and other groups that focus on changing the future of these animals. Each one of your donations, small or large, will help an animal that is constantly exposed to threats such as:</p>
+            <h1 class="about text-center">Your Contribution</h1>
+            <p class="about_text" align="center">We are raising awareness for animals that are in critical danger of being  endangered or extinct. We connect your donations to non-profit organizations and other groups that focus on changing the future of these animals. Each one of your donations, small or large, will help an animal that is constantly exposed to threats such as:</p>
 
         </div>
          <div class = "grid-container">
@@ -94,6 +102,106 @@
 
               <div class="grid-item">Human-Wildlife Conflict
               <div><img src="human_wildlife.jpg" alt="Human Human-Wildlife Conflict" width="250" height="200"></div></div>
+        </div>
+
+        <!--Account Sign In-->
+        <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2>Sign In</h2>
+              </div>
+              <div class="modal-body">
+                  <form>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                      </div>
+                    </div>
+                  </form>
+              </div>
+              <div class="modal-footer">
+                <a id="signIn" type="button" class="btn issue" href="profile.html">Sign In</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Account Sign Up-->
+        <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h2 class='text-center'>Sign Up</h2>
+              </div>
+              <div class="modal-body">
+                  <form id="formD">
+                      <div class="form-row">
+                        <div class="form-group col-md-6">
+                          <label for="inputName">First</label>
+                          <input type="firstName" class="form-control" id="firstName" placeholder="firstName">
+                        </div>
+                        <div class="form-group col-md-6">
+                          <label for="inputName">Last</label>
+                          <input type="lastName" class="form-control" id="lastName" placeholder="lastName">
+                        </div>
+                      </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-6">
+                        <label for="inputEmail4">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                      </div>
+                      <div class="form-group col-md-6">
+                        <label for="inputPassword4">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Password">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress">Address</label>
+                      <input type="text" class="form-control" id="line1" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                      <label for="inputAddress2">Address 2</label>
+                      <input type="text" class="form-control" id="line2" placeholder="Apartment, studio, or floor">
+                    </div>
+                    <div class="form-row">
+                      <div class="form-group col-md-2">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="city">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputState">State</label>
+                        <input type="text" class="form-control" id="state">
+                      </div>
+                      <div class="form-group col-md-2">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="zip">
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="inputPhone">Phone Number</label>
+                        <input type="text" class="form-control" id="phone1">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                          Save card info
+                        </label>
+                      </div>
+                    </div>
+                  </form>
+
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn issue" onclick="createCustomer();">Create Account</button>
+              </div>
+            </div>
+          </div>
         </div>
     </body>
 

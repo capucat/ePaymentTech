@@ -194,6 +194,14 @@
   nextButton.addEventListener("click", showNextSlide);
 })();
 
+$(function () {
+        $('#createAcct').click(function() {
+            $('#resultModal').one('hidden.bs.modal', function() {
+                $('#signUpModal').modal('show');
+            }).modal('hide');
+        });
+    });
+
 // function signIn() {
 //     $('#signInModal').show().on('shown', function() {
 //     $('#resultModal').modal('hide');
@@ -201,7 +209,7 @@
     // $("#signInModal").modal('show');
     // $('#resultModal').modal('hide');
     // $("#signInModal").modal('show');
-}
+// }
 // function openAcc() {
 //     // $('#resultModal').modal('hide');
 //     $("#signUpModal").modal('show');
