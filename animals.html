@@ -35,7 +35,7 @@
   font-size: 30px;
   /* text-align: center; */
 }
-.grid_description {
+.col-md-3 {
     padding-top: 50px;
     font-size: 15px;
 }
@@ -49,7 +49,7 @@
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(32,178,170);">
             <a class="navbar-brand main-color" href="#">
-                <img src="/docs/4.2/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
+               <img src="otter_bigger.png" id="otter_logo" width="30" height="30" alt="">
                 Otterly</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -91,36 +91,39 @@
             </p>
 
         </div>
-        <div class = "grid-container mb-4">
+        <div class = "container">
                 <!-- 2col 2 row -->
-                <div class="grid-item">Amur Leopard
-                    <div class="animal_description"><img src="amur_leopard.jpg" alt="Amur Leopard" width="250" height="200"></div>
+                <div class="row">
+                    <div class="col-md-3">Amur Leopard
+                        <div class="animal_description"><img src="amur_leopard.jpg" alt="Amur Leopard" width="250" height="200"></div>
+                    </div>
+                    <div class="col-md-3">
+                        Amur Leopards live in temperate climates, and live in solitary. When they hunt for food, they usually keep it to themselves. Amur Leopards are victim to the illegal wild life trade, and are killed for their fur.
+                    </div>
+
+                  <div class="col-md-3">Javan Rhino
+                    <div><img src="rhino.jpg" alt="Javan Rhino" width="250" height="200"></div>
+                  </div>
+                  <div class="col-md-3" align="jutsify">
+                        The Javan Rhino lives in rainy, warm grasslands. They live mostly in solitary, but deviate awawy from that lifestly due to courtship and offspring-rearing. Rhinos have had a history of being hunted. During colonial times, they were killed by trophy hunters. Poaching  is still prevalent as well.
+                    </div>
                 </div>
-                <div class="grid-description mt-7">
-                    Amur Leopards live in temperate climates, and live in solitary. When they hunt for food, they usually keep it to themselves. Amur Leopards are victim to the illegal wild life trade, and are killed for their fur.
-                </div>
+                <div class="row">
+                  <div class="col-md-3">Asian Elephant
+                      <div><img src="elephant.jpg" alt="Asian Elephant" width="250" height="200"></div>
+                  </div>
+                  <div class="col-md-3">
+                        Asian Elephants are very social animals, that form moderately sized groups. They are also an important cultural icon in Asia, especially in Hindu mythology. Asian Elephants are endangered due to poaching and habitat loss.
 
-              <div class="grid-item">Javan Rhino
-                <div><img src="rhino.jpg" alt="Javan Rhino" width="250" height="200"></div>
-              </div>
-              <div class="grid-description">
-                    The Javan Rhino lives in rainy, warm grasslands. They live mostly in solitary, but deviate awawy from that lifestly due to courtship and offspring-rearing. Rhinos have had a history of being hunted. During colonial times, they were killed by trophy hunters. Poaching  is still prevalent as well.
-                </div>
+                    </div>
 
-              <div class="grid-item">Asian Elephant
-                  <div><img src="elephant.jpg" alt="Asian Elephant" width="250" height="200"></div>
-              </div>
-              <div class="grid-description">
-                    Asian Elephants are very social animals, that form moderately sized groups. They are also an important cultural icon in Asia, especially in Hindu mythology. Asian Elephants are endangered due to poaching and habitat loss.
+                  <div class="col-md-3">Lemur
+                      <div><img src="lemur.jpg" alt="Lemur" width="250" height="200"></div>
+                  </div>
+                   <div class="col-md-3">
+                        Lemurs get their name from the latin word, Lemures, which means 'spirit of the night'. The largest every living type of lemur was the Archaeoindris.
 
-                </div>
-
-              <div class="grid-item">Lemur
-                  <div><img src="lemur.jpg" alt="Lemur" width="250" height="200"></div>
-              </div>
-               <div class="grid-description">
-                    Lemurs get their name from the latin word, Lemures, which means 'spirit of the night'. The largest every living type of lemur was the Archaeoindris.
-
+                    </div>
                 </div>
         </div>
     </div>
@@ -221,7 +224,7 @@
           <div class="modal-footer">
             <!-- <button type="button" class="btn issue" onclick="createCustomer();">Create Account</button> -->
             <button id="signIn" type="button" class="btn issue"><a href="profile.html" style={color:white}>Sign In</a></button>
-            
+
           </div>
         </div>
       </div>
