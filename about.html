@@ -11,6 +11,29 @@
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
 
+    <style>
+      .about {
+        padding: 20px;
+      }
+      .about_text {
+        padding-left: 20px;
+        font-size: 20px;
+      }
+      .grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  /*background-color: #2196F3;*/
+  padding: 10px;
+}
+.grid-item {
+  /*background-color: rgba(255, 255, 255, 0.8);*/
+  /*border: 1px solid rgba(0, 0, 0, 0.8);*/
+  padding: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+    </style>
+
 </head>
 
 <body>
@@ -47,8 +70,23 @@
 
     <body>
         <div>
-            <h1>Your Contribution</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada enim elit, id ornare augue cursus id. Vestibulum sed lectus vel nibh pharetra molestie. Morbi erat ipsum, porta euismod ipsum quis, cursus sollicitudin augue. Donec posuere fringilla ultrices. Donec ultrices, enim et mattis egestas, nunc libero iaculis ante, rhoncus ornare felis sapien quis mi. Curabitur mollis vel arcu sit amet consectetur. Morbi pretium metus nec nulla hendrerit, in consectetur urna ultrices. Quisque condimentum laoreet urna malesuada pharetra. In sapien magna, fermentum sed eros a, accumsan porttitor ante. Praesent nec felis nunc. Suspendisse tempus bibendum dolor, eget ultricies ex efficitur at. Donec malesuada hendrerit lacinia. Mauris in mi scelerisque, eleifend dolor vitae, varius justo. Curabitur non vulputate massa, id luctus mauris. Mauris ut faucibus sapien, placerat dignissim risus.</p>
+            <h1 class="about">Your Contribution</h1>
+            <p class="about_text">We are raising awareness for animals that are in critical danger of being  endangered or extinct. We connect your donations to non-profit organizations and other groups that focus on changing the future of these animals. Each one of your donations, small or large, will help an animal that is constantly exposed to threats such as:</p>
+
+        </div>
+         <div class = "grid-container">
+                <!-- 2col 2 row -->
+                <div class="grid-item">Poaching
+                    <div><img src="poaching.jpg" alt="poaching" width="250" height="200"></div></div>
+
+              <div class="grid-item">Global Warming
+                <div><img src="global_warming.jpg" alt="global warming" width="250" height="200"></div></div>
+
+              <div class="grid-item">Destruction of Habitat
+              <div><img src="destruction.jpg" alt="destruction of habitat" width="250" height="200"></div></div>
+
+              <div class="grid-item">Human-Wildlife Conflict
+              <div><img src="human_wildlife.jpg" alt="Human Human-Wildlife Conflict" width="250" height="200"></div></div>
         </div>
     </body>
 
