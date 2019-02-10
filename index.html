@@ -15,9 +15,45 @@
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Font+Name">
 
+    <style>
+      .act_now {
+        padding: 20px;
+        font-size: 30px;
+        font-weight: 700;
+        color: black;
+        text-align: center;
+      }
+      .text-center {
+        .padding-top: 50px;
+        font-size:  20px;
+        font-weight: 600;
+        color: black;
+      }
+
+      .empty {
+        height: 50px;
+      }
+
+      .top-left {
+        position: absolute;
+        top: 70px;
+        left: 20px;
+        color: white;
+        font-size: 70px;
+        font-weight: 700;
+      }
+
+      .container {
+        position: relative;
+        text-align: center;
+        color: white;
+      }
+
+    </style>
 </head>
 
 <body>
+  <!-- img src="cool_leopard.jpg" id="darksea" alt="dark_sea"> -->
     <header>
         <!-- Navigation -->
         <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(32,178,170);">
@@ -56,26 +92,38 @@
                 </div>
             </nav>
         </header>
-
-        <!-- Carousel of Images -->
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-            <div class="carousel-item">
-              <img src="..." class="d-block w-100" alt="...">
-            </div>
-          </div>
-        </div>
-        <div class="container justify-content-center">
+      </div>
+      <div>
+          <img src="cool_leopard.jpg" alt="snow_leopard" style="width:100%;">
+          <div class="top-left">SAVE TODAY.</div>
+      </div>
+      <div class ="empty"></div>
+     <div class="container justify-content-center">
             <p class="text-center">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed malesuada enim elit, id ornare augue cursus id. Vestibulum sed lectus vel nibh pharetra molestie. Morbi erat ipsum, porta euismod ipsum quis, cursus sollicitudin augue. Donec posuere fringilla ultrices. Donec ultrices, enim et mattis egestas, nunc libero iaculis ante, rhoncus ornare felis sapien quis mi. Curabitur mollis vel arcu sit amet consectetur. Morbi pretium metus nec nulla hendrerit, in consectetur urna ultrices. Quisque condimentum laoreet urna malesuada pharetra. In sapien magna, fermentum sed eros a, accumsan porttitor ante. Praesent nec felis nunc. Suspendisse tempus bibendum dolor, eget ultricies ex efficitur at. Donec malesuada hendrerit lacinia. Mauris in mi scelerisque, eleifend dolor vitae, varius justo. Curabitur non vulputate massa, id luctus mauris. Mauris ut faucibus sapien, placerat dignissim risus.
+                Species ranging from snow leopards, green turtles, lemurs and more, are facing endangerment and even extinction. We work towards helping every species that are constantly threatened by man-made issues such as global warming, poaching, illegal trading and more immoral acts. We need to take responsibility for our actions.
             </p>
+            <p class="act_now">We need to act now.</p>
         </div>
+        <!-- Carousel of Images -->
+
+        <div class="container justify-content-center">
+            <div id="carouselExampleSlidesOnly" class="carousel slide justify-content-center" data-ride="carousel">
+              <div class="carousel-inner equal">
+                <div class="carousel-item active">
+                    <img src="leopard.jpg" class="caro-size" alt="snow_leopard">
+                </div>
+                <div class="carousel-item">
+                  <img src="panda.jpg" class="caro-size" alt="panda">
+                </div>
+                <div class="carousel-item">
+                  <img src="lemur.jpg" class="caro-size" alt="lemur">
+                </div>
+                <div class="carousel-item">
+                  <img src="green_turtle.jpg" class="caro-size" alt="green_turtle">
+                </div>
+              </div>
+        </div>
+
         </div>
 
     <!--Account Sign Up-->
@@ -179,6 +227,8 @@
         </div>
       </div>
     </div>
+
+    <div class="empty"></div>
 
     <footer>
     </footer>
