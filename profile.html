@@ -10,41 +10,77 @@
     <!-- Bootstrap -->
     <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" integrity="sha384-PmY9l28YgO4JwMKbTvgaS7XNZJ30MK9FAZjjzXtlqyZCqBY6X6bXIkM++IkyinN+" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-
+    <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
 <body>
     <header>
         <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #e3f2fd;">
-            <a class="navbar-brand" href="#">
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: rgb(32,178,170);">
+            <a class="navbar-brand main-color" href="#">
                 <img src="/docs/4.2/assets/brand/bootstrap-solid.svg" width="30" height="30" class="d-inline-block align-top" alt="">
-                Navbar</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                Otterly</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="history.html">History</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Profile</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-              </li>
-            </ul>
-            </div>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarText">
+              <ul class="navbar-nav main-color">
+                <li class="nav">
+                  <a class="nav-link main-color" href="index.html">HOME</a>
+                </li>
+                <li class="nav">
+                  <a class="nav-link main-color" href="animals.html">ANIMALS</a>
+                </li>
+                <li class="nav">
+                  <a class="nav-link main-color" href="issues.html">ISSUES</a>
+                </li>
+                <li class="nav">
+                  <a class="nav-link main-color" href="about.html">ABOUT</a>
+                </li>
+                <li class="nav">
+                  <a class="nav-link main-color" href="donate.html">DONATE</a>
+                </li>
+                <li class="nav-item">
+                  <button class="main-Btn btn" data-toggle="modal" data-target="#signInModal">LogOut</button>
+                </li>
+              </ul>
+          </div>
         </nav>
 
     </header>
 
-    <div>
-        <h1>show their info</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <img src="amur_leopard.jpg" alt="Amur Leopard" width="250" height="200">
+          <h4 class="row">Name</h4>
+          <h4 class="row">Email</h4>
+          <h4 class="row">Phone</h4>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col">
+                    <img src="amur_leopard.jpg" alt="Amur Leopard" width="150" height="150">
+                    <h4>Name</h4>
+                </div>
+                <div class="col">
+                    <img src="amur_leopard.jpg" alt="Amur Leopard" width="150" height="150">
+                        <h4>Name</h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <img src="amur_leopard.jpg" alt="Amur Leopard" width="150" height="150">
+                        <h4>Name</h4>
+                </div>
+                <div class="col">
+                    <button class='btn' disabled>
+                    </button>
+                    <button class='btn main-Dark'>Donate</button>
+                </div>
+            </div>
+        </div>
+      </div>
     </div>
 
     <footer>
