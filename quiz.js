@@ -138,7 +138,10 @@
     }
 
     finalAnswer = getKeysWithHighestValue(dict,1);
-    window.alert("Your Animal is: "+finalAnswer);
+    // window.alert("Your Animal is: "+finalAnswer);
+
+    var ans = document.getElementById("result");
+    ans.innerHTML += "<p>"+finalAnswer+"</p>";
     // show number of correct answers out of total
     // resultsContainer.innerHTML = finalAnswer;
   }
@@ -190,3 +193,16 @@
   previousButton.addEventListener("click", showPreviousSlide);
   nextButton.addEventListener("click", showNextSlide);
 })();
+
+// function signIn() {
+//     $('#signInModal').show().on('shown', function() {
+//     $('#resultModal').modal('hide');
+// });
+    // $("#signInModal").modal('show');
+    // $('#resultModal').modal('hide');
+    // $("#signInModal").modal('show');
+}
+// function openAcc() {
+//     // $('#resultModal').modal('hide');
+//     $("#signUpModal").modal('show');
+// }

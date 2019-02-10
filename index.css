@@ -12,12 +12,35 @@ body {
 }
 .main-Btn{
     background-color: rgb(255,255,240);
+    margin-right: 6px;
 }
 .caro-size {
-    /* height:600px; */
+    height:600px;
     width:600px;
     /* text-align: center; */
 }
 .equal {
     margin: 0 auto !important;
+}
+.issue {
+    background-color: rgb(210,80,85);
+    font-size: 18px;
+}
+.contain {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+.quiz {
+    /* position:fixed; */
+    /* right:20px;
+    top:200px; */
+    height:140px;
+    width:140px;
+}
+@media (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
 }
